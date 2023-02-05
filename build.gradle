@@ -1,0 +1,16 @@
+apply plugin: 'java'
+apply plugin: 'jacoco'
+apply plugin: 'application'
+
+
+mainClassName = 'TodoApp2.Main'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    testImplementation     'junit:junit:4.13'
+    compile group: 'mysql', name: 'mysql-connector-java', version: '5.1.13'
+    implementation group: 'com.mysql', name: 'mysql-connector-j', version: '8.0.32'
+}
