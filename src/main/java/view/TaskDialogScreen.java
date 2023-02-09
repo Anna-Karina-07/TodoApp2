@@ -199,7 +199,7 @@ public class TaskDialogScreen extends javax.swing.JDialog {
             task.setNotes(jTextAreaNotes.getText());
             task.setIsCompleted(false);
             
-            SimpleDateFormat dateFormat = new SimpleDateFormat ("dd/MM/y"); 
+            SimpleDateFormat dateFormat = new SimpleDateFormat ("dd/MM/yyyy"); 
             Date deadline = null;
             deadline = dateFormat.parse(jFormattedTextFieldDeadline.getText());
             task.setDeadline(deadline);

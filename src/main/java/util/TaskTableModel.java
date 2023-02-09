@@ -68,7 +68,12 @@ public class TaskTableModel extends AbstractTableModel {
                 return "Dados não encontrados";
         }
     }
-
+    
+    @Override
+    public void setValueAt(Object aValue, int rowIndex, int columnIndex){
+        tasks.get(rowIndex).setIsCompleted((boolean) aValue);
+    }
+    
     public String[] getColumns() {
         return columns;
     }
